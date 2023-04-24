@@ -18,6 +18,10 @@
   background: #030711;
 }
 
+.howItWorksContainer {
+  background: #091434;
+}
+
 .featuredGamesBackgroundImage {
   background: url(../../public/assets/images/featured_games_background.svg);
   height: fit-content;

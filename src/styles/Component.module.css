@@ -49,3 +49,23 @@
     max-width: 400px;
   }
 }
+
+.howItWorksCardContainer {
+  border-width: 1px 8px 8px 1px;
+  border-style: solid;
+  border-color: #02baf1;
+  border-radius: 56px;
+  background: #003c4e;
+}
+
+.howItWorksCardContainer .stepTextContainer {
+  background: #1d5e82;
+  border-width: 1px 6px 6px 1px;
+  border-style: solid;
+  border-color: #02baf1;
+  border-radius: 32px;
+  width: 115px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
