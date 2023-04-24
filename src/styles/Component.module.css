@@ -1,0 +1,51 @@
+.customButton {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.joinWaitlistInputContainer {
+  padding: 8px;
+  background: #1d5e82;
+  border: 2px solid #02baf1;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.16);
+  border-radius: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.joinWaitlistInputContainer input {
+  border: none !important;
+  outline: none !important;
+  background-color: inherit;
+  margin-left: 5px;
+  color: #fff;
+  width: 400px;
+}
+
+.joinWaitlistInputContainer .iconWrapper {
+  background: #02baf1;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 32px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 450px) {
+  .joinWaitlistInputContainer input {
+    border: none !important;
+    outline: none !important;
+    background-color: inherit;
+    margin-left: 5px;
+    color: #fff;
+    max-width: 400px;
+  }
+}

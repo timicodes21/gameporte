@@ -1,0 +1,50 @@
+.topUpGameContainer {
+  height: 100vh;
+  background: #030711;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000 !important;
+}
+
+.joinWaitlistContainer {
+  background: linear-gradient(180deg, #0b173d 0%, #091434 100%) !important;
+  position: relative;
+  height: 350px;
+  z-index: 1;
+}
+
+.featuredGamesContainer {
+  background: #030711;
+}
+
+.featuredGamesBackgroundImage {
+  background: url(../../public/assets/images/featured_games_background.svg);
+  height: fit-content;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 40px;
+}
+
+.joinWaitlistImage {
+  position: absolute;
+  left: -105.95px;
+  top: 0.4px;
+}
+
+.joinWaitlistCircle1 {
+  position: absolute;
+  width: 236px;
+  height: 236px;
+  right: 212px;
+  bottom: 178px;
+}
+
+.joinWaitlistCircle2 {
+  position: absolute;
+  width: 310px;
+  height: 310px;
+  left: 159px;
+  top: calc(50% - 310px / 2 + 143px);
+}
