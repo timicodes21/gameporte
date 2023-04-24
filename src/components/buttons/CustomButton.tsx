@@ -3,7 +3,7 @@ import styles from "@/styles/Component.module.css";
 
 interface IProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: ReactNode;
-  variant: "primary" | "secondary";
+  variant: "primary" | "secondary" | "main";
   leftIcon?: ReactNode;
 }
 
@@ -19,6 +19,8 @@ const CustomButton: React.FC<IProps> = ({
         return "#02BAF1";
       case "secondary":
         return "#1D5E82";
+      case "main":
+        return "#244CC6";
       default:
         return "#02BAF1";
     }
@@ -29,6 +31,8 @@ const CustomButton: React.FC<IProps> = ({
       case "primary":
         return "#0A0A0B";
       case "secondary":
+        return "#FFFFFF";
+      case "main":
         return "#FFFFFF";
       default:
         return "#0A0A0B";

@@ -18,6 +18,19 @@
   background: #030711;
 }
 
+.joinUsContainer {
+  background: #030711;
+}
+
+.joinUsContainer .joinUsBackground {
+  background: url(../../public/assets/images/joinus_background.svg);
+  height: fit-content;
+  border-radius: 80px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .howItWorksContainer {
   background: #091434;
 }
@@ -51,4 +64,12 @@
   height: 310px;
   left: 159px;
   top: calc(50% - 310px / 2 + 143px);
+}
+
+.footerBackground {
+  background: #091434;
+}
+
+.footer2Background {
+  background: #030711;
 }

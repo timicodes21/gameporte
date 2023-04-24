@@ -26,6 +26,8 @@ export const theme = createTheme({
     },
     primary: {
       main: "#091434",
+      light: "#5DDAFF",
+      dark: "#02BAF1",
     },
     // secondary: {
     //   main: "#212121",

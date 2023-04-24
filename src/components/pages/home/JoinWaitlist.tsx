@@ -5,9 +5,16 @@ import Image from "next/image";
 import PageContainer from "@/components/layout/PageContainer";
 import JoinWaitlistInput from "@/components/forms/JoinWaitlistInput";
 
-const JoinWaitlist = () => {
+interface IProps {
+  border?: boolean;
+}
+
+const JoinWaitlist: React.FC<IProps> = ({ border }) => {
   return (
-    <Box className={styles.joinWaitlistContainer}>
+    <Box
+      className={styles.joinWaitlistContainer}
+      sx={{ borderBottom: border ? "8px solid #000" : "none" }}
+    >
       <Box className={styles.joinWaitlistImage}>
         <Image
           alt="image"
