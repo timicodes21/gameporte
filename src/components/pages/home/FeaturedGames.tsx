@@ -1,8 +1,8 @@
-import { Box, Grid, Typography } from "@mui/material";
-import React from "react";
-import styles from "@/styles/Home.module.css";
-import PageContainer from "@/components/layout/PageContainer";
-import Image from "next/image";
+import { Box, Grid, Typography } from '@mui/material';
+import React from 'react';
+import styles from '@/styles/Home.module.css';
+import PageContainer from '@/components/layout/PageContainer';
+import Image from 'next/image';
 
 const FeaturedGames = () => {
   return (
@@ -14,12 +14,12 @@ const FeaturedGames = () => {
         >
           <Typography
             className="font-40 font-700 text-center"
-            sx={{ color: "info.main" }}
+            sx={{ color: 'info.main' }}
           >
             Featured Games
           </Typography>
           <Grid container spacing={2} sx={{ mt: 2 }}>
-            <Grid item xs={12} md={6} lg={3}>
+            <Grid item xs={6} md={6} lg={3}>
               <Box className="imageContainer">
                 <Image
                   alt="featured_games"
@@ -28,7 +28,7 @@ const FeaturedGames = () => {
                 />
               </Box>
             </Grid>
-            <Grid item xs={12} md={6} lg={3}>
+            <Grid item xs={6} md={6} lg={3}>
               <Box className="imageContainer">
                 <Image
                   alt="featured_games"
@@ -37,7 +37,7 @@ const FeaturedGames = () => {
                 />
               </Box>
             </Grid>
-            <Grid item xs={12} md={6} lg={3}>
+            <Grid item xs={6} md={6} lg={3}>
               <Box className="imageContainer">
                 <Image
                   alt="featured_games"
@@ -46,7 +46,7 @@ const FeaturedGames = () => {
                 />
               </Box>
             </Grid>
-            <Grid item xs={12} md={6} lg={3}>
+            <Grid item xs={6} md={6} lg={3}>
               <Box className="imageContainer">
                 <Image
                   alt="featured_games"

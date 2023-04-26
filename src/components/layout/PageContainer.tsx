@@ -1,6 +1,6 @@
-import { Container } from "@mui/material";
-import { NextPage } from "next";
-import React, { ReactNode } from "react";
+import { Container } from '@mui/material';
+import { NextPage } from 'next';
+import React, { ReactNode } from 'react';
 
 interface IProps {
   children: ReactNode;
@@ -12,7 +12,7 @@ const PageContainer: NextPage<IProps> = ({ children, paddingVertical }) => {
     <>
       <Container
         maxWidth="xl"
-        sx={{ px: { xs: 1, md: 5 }, py: paddingVertical ? 5 : 0 }}
+        sx={{ px: { xs: 1 }, py: paddingVertical ? 5 : 0 }}
       >
         {children}
       </Container>

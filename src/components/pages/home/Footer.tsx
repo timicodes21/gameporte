@@ -1,11 +1,11 @@
-import { Box, Typography } from "@mui/material";
-import React from "react";
-import styles from "@/styles/Home.module.css";
-import PageContainer from "@/components/layout/PageContainer";
-import CustomButton from "@/components/buttons/CustomButton";
-import Link from "next/link";
-import Image from "next/image";
-import { socialMediaLinks } from "@/data";
+import { Box, Grid, Typography } from '@mui/material';
+import React from 'react';
+import styles from '@/styles/Home.module.css';
+import PageContainer from '@/components/layout/PageContainer';
+import CustomButton from '@/components/buttons/CustomButton';
+import Link from 'next/link';
+import Image from 'next/image';
+import { socialMediaLinks } from '@/data';
 
 const Footer = () => {
   return (
@@ -14,43 +14,52 @@ const Footer = () => {
         <PageContainer paddingVertical>
           <Box
             className="d-flex flex-warp items-center justify-center"
-            sx={{
-              mx: { xs: 1, md: 2, lg: 10 },
-              pb: { xs: 2, md: 5 },
-              borderBottom: "1px solid #132867",
-            }}
+            // sx={{
+            //   mx: { xs: 1, md: 2, lg: 10 },
+            //   pb: { xs: 2, md: 5 },
+            //   borderBottom: '1px solid #132867',
+            // }}
           >
             {/* Links */}
-            <Box sx={{ mx: 1 }}>
-              <Link href="/about">
-                <CustomButton variant="main">About us</CustomButton>
-              </Link>
-            </Box>
-            <Box sx={{ mx: 1 }}>
-              <Link href="/about">
-                <CustomButton variant="main">FAQ</CustomButton>
-              </Link>
-            </Box>
-            <Box sx={{ mx: 1 }}>
-              <Link href="/about">
-                <CustomButton variant="main">Privacy</CustomButton>
-              </Link>
-            </Box>
-            <Box sx={{ mx: 1 }}>
-              <Link href="/about">
-                <CustomButton variant="main">Terms & Conditions</CustomButton>
-              </Link>
-            </Box>
-            <Box sx={{ mx: 1 }}>
-              <Link href="/about">
-                <CustomButton variant="main">Contact us</CustomButton>
-              </Link>
-            </Box>
-            <Box sx={{ mx: 1 }}>
-              <Link href="/about">
-                <CustomButton variant="main">Sponsorship</CustomButton>
-              </Link>
-            </Box>
+            <Grid
+              container
+              spacing={2}
+              sx={{
+                justifyContent: 'space-between',
+                alignItems: 'center',
+              }}
+            >
+              <Grid item xs={4} md={2}>
+                <Link href="/about">
+                  <CustomButton variant="main">About us</CustomButton>
+                </Link>
+              </Grid>
+              <Grid item xs={4} md={2}>
+                <Link href="/faq">
+                  <CustomButton variant="main">FAQ</CustomButton>
+                </Link>
+              </Grid>
+              <Grid item xs={4} md={2}>
+                <Link href="/privacy">
+                  <CustomButton variant="main">Privacy</CustomButton>
+                </Link>
+              </Grid>
+              <Grid item xs={12} md={2}>
+                <Link href="/terms">
+                  <CustomButton variant="main">Terms & Conditions</CustomButton>
+                </Link>
+              </Grid>
+              <Grid item xs={6} md={2}>
+                <Link href="/about">
+                  <CustomButton variant="main">Contact us</CustomButton>
+                </Link>
+              </Grid>
+              <Grid item xs={6} md={2}>
+                <Link href="/about">
+                  <CustomButton variant="main">Sponsorship</CustomButton>
+                </Link>
+              </Grid>
+            </Grid>
           </Box>
           <Box className="d-flex flex-column justify-center items-center">
             <Box sx={{ mt: { xs: 3, md: 5 } }}>
@@ -102,7 +111,7 @@ const Footer = () => {
               />
               <Typography
                 className="font-20 font-600"
-                sx={{ color: "info.main", ml: 1 }}
+                sx={{ color: 'info.main', ml: 1 }}
               >
                 Gameporte Interactive Inc.
               </Typography>
@@ -114,7 +123,7 @@ const Footer = () => {
         <PageContainer paddingVertical>
           <Typography
             className="font-14 font-400 text-center"
-            sx={{ color: "info.dark" }}
+            sx={{ color: 'info.dark' }}
           >
             Gameporte is not endorsed by, directly affiliated with, maintained
             or sponsored by Apple Inc, Electronic Arts, Activision Blizzard,

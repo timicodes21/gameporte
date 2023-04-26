@@ -1,10 +1,12 @@
 .aboutContainer {
-  background: url(../../public/assets/images/about_background.svg);
-  background-position: center;
-  background-size: cover;
+  background: url(../../public/assets/images/phone_background.png),
+    url(../../public/assets/images/about_background.svg);
+
+  background-position: right, center;
+  background-size: contain, cover;
   background-repeat: no-repeat;
   position: relative;
-  height: 1300px;
+  height: auto;
 }
 
 .aboutContainer .phoneBackground {

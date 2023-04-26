@@ -1,10 +1,10 @@
-import React from "react";
-import styles from "@/styles/Component.module.css";
-import Image from "next/image";
+import React from 'react';
+import styles from '@/styles/Component.module.css';
+import Image from 'next/image';
 
 interface IProps extends React.InputHTMLAttributes<HTMLInputElement> {}
 
-const JoinWaitlistInput: React.FC<IProps> = ({ ...rest }) => {
+const JoinWaitlistInput: React.FC<IProps> = ({ onClick, onChange, value }) => {
   return (
     <div className={styles.joinWaitlistInputContainer}>
       <Image
@@ -13,8 +13,14 @@ const JoinWaitlistInput: React.FC<IProps> = ({ ...rest }) => {
         height={22}
         alt="mail_icon"
       />
-      <input type="email" {...rest} />
-      <div className={styles.iconWrapper}>
+      <input
+        type="email"
+        value={value}
+        onChange={onChange}
+        placeholder="Email"
+        style={{ width: '100%' }}
+      />
+      <div className={styles.iconWrapper} onClick={onClick}>
         <Image
           src="/assets/icons/send_icon.svg"
           width={24}

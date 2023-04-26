@@ -3,10 +3,10 @@
 @tailwind utilities;
  */
 
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -186,4 +186,100 @@ a {
   width: 100% !important;
   position: relative !important;
   height: unset !important;
+}
+
+.imageContainer2 {
+  background-image: url(/assets/images/coming_img.svg),
+    url(/assets/images/coming_back.svg);
+  background-repeat: no-repeat;
+  background-position: right, center;
+  background-size: contain, cover;
+  /* width: 100%; */
+  height: 400px;
+  position: relative;
+  border-radius: 18px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  padding: 1rem;
+}
+
+.text-blue {
+  color: #02baf1;
+}
+
+.privacy-details-container {
+  overflow: hidden;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s ease-out;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.privacy-details-container.active {
+  max-height: 1000px;
+}
+.text-ash2 {
+  color: #36373a;
+}
+.list {
+  margin: 1rem 0;
+}
+.pad-image {
+  background-image: url(/assets/images/step_5_icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 100%;
+  height: 60%;
+}
+.pad-image3 {
+  background-image: url(/assets/images/step_3_icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 100%;
+  height: 30%;
+}
+
+.joinInput {
+  width: 50%;
+}
+
+.joinInput input {
+  width: 100%;
+}
+
+/* .bannerImg {
+  width: 100% !important;
+  height: auto !important;
+} */
+
+.indicators {
+  position: absolute;
+  bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .joinInput {
+    width: 100%;
+  }
+  .imageContainer2 p {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .imageContainer2 {
+    background-position: bottom, center;
+  }
+  .banner {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .banner {
+    display: none;
+  }
 }
