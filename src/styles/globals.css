@@ -282,4 +282,8 @@ a {
   .banner {
     display: none;
   }
+  .font-72 {
+    font-size: 30px !important;
+    z-index: 1;
+  }
 }
