@@ -21,7 +21,6 @@
 @media screen and (max-width: 750px) {
   .aboutContainer {
     background: url(../../public/assets/images/about_background.svg);
-
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
