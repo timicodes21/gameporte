@@ -58,10 +58,10 @@ export const CaroselImages: ICaroselImage[] = [
   },
   {
     src: '/assets/images/topup_background_2.svg',
-    title: 'Network with other gamer ',
-
-    description:
-      'Take your passion for gaming to another level by earning cash and crypto playing the games you love.',
+    title: 'Top up Game vouchers on Porte shop ',
+    title2: ' ',
+    description: '',
+    noButton: true,
   },
   {
     src: '/assets/images/topup_background_3.svg',

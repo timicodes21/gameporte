@@ -18,6 +18,7 @@ const TopupGame = () => {
     <Box
       sx={{
         backgroundColor: '#030711',
+        paddingBottom: '1rem',
         // backgroundColor: 'yellow',
       }}
     >
@@ -178,6 +179,60 @@ const TopupGame = () => {
       </Carousel>
       <WaitListModal show={show} setShow={setShow} />
       <ComingSoon show={show2} setShow={setShow2} />
+      <Box className="mobileBack" sx={{ backgroundColor: '#030711' }}>
+        <Typography
+          sx={{
+            fontSize: '2rem',
+            fontWeight: '700',
+            color: '#fff',
+            textAlign: 'left',
+            padding: '2rem 2rem 0 2rem',
+            margin: '3rem 0 0 0   ',
+          }}
+        >
+          Get rewarded <br /> playing your <br /> favorite games
+        </Typography>
+        <Typography
+          sx={{
+            fontSize: '1rem',
+            color: '#fff',
+            textAlign: 'left',
+            padding: '0 2rem',
+          }}
+        >
+          Take your passion for gaming to another level by earning cash and
+          crypto playing the games you love.
+        </Typography>
+        <Box
+          sx={{
+            width: 'fit-content',
+            margin: '1rem auto',
+            display: 'flex',
+            justifyContent: 'space-between',
+            alignItems: 'center',
+            gap: '1rem',
+          }}
+        >
+          <div className={styles2.apple} onClick={() => setShow(true)}>
+            <div className="d-flex justify-content-center">
+              <BsApple style={{ fontSize: '42px' }} />
+              <div>
+                <span className="font-12 font-500">Download on the</span> <br />
+                <span className="font-16 font-700">App Store</span>
+              </div>
+            </div>
+          </div>
+          <div className={styles2.play} onClick={() => setShow(true)}>
+            <div className="d-flex justify-content-center">
+              <FaGooglePlay style={{ fontSize: '42px' }} />
+              <div className="d-flex flex-column ms-2">
+                <span className="font-12 font-500">Get it on</span>
+                <span className="font-16 font-700">Google Play</span>
+              </div>
+            </div>
+          </div>
+        </Box>
+      </Box>
     </Box>
   );
 };

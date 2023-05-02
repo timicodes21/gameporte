@@ -261,6 +261,9 @@ a {
   position: absolute;
   bottom: 0;
 }
+.mobileBack {
+  display: none;
+}
 
 @media (max-width: 768px) {
   .joinInput {
@@ -275,6 +278,17 @@ a {
   }
   .banner {
     display: none;
+  }
+  .mobileBack {
+    display: block;
+    background-image: url(/assets/images/mobile_back.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding: 1rem 0;
   }
 }
 

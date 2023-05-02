@@ -4,9 +4,11 @@ import PageContainer from './PageContainer';
 import Image from 'next/image';
 import CustomButton from '../buttons/CustomButton';
 import WaitListModal from '../modals/WaitListModal';
+import ComingSoon from '../modals/comingSoon';
 
 const Navbar = () => {
   const [show, setShow] = React.useState(false);
+  const [show2, setShow2] = React.useState(false);
   return (
     <Box
       sx={{ backgroundColor: 'primary.main', py: { xs: '5px', md: '10px' } }}
@@ -39,7 +41,7 @@ const Navbar = () => {
             </Box>
           </Link>
           <Box className="d-flex items-center">
-            {/* <CustomButton
+            <CustomButton
               variant="secondary"
               leftIcon={
                 <Image
@@ -49,9 +51,10 @@ const Navbar = () => {
                   height={24}
                 />
               }
+              onClick={() => setShow2(true)}
             >
               Porte Shop
-            </CustomButton> */}
+            </CustomButton>
             <Box sx={{ ml: 1 }}></Box>
             <CustomButton variant="primary" onClick={() => setShow(true)}>
               Join Waitlist
@@ -60,6 +63,7 @@ const Navbar = () => {
         </Box>
       </PageContainer>
       <WaitListModal show={show} setShow={setShow} />
+      <ComingSoon show={show2} setShow={setShow2} />
     </Box>
   );
 };

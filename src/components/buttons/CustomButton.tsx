@@ -40,7 +40,7 @@ const CustomButton: React.FC<IProps> = ({
   };
 
   const style = {
-    width: '100%',
+    width: 'fit-content',
     borderRadius: '8px',
     padding: '12px 16px',
     background: renderBackgroundColor(),
